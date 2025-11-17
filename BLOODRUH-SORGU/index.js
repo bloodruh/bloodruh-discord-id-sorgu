@@ -1,4 +1,4 @@
-const { Client, GatewayIntentBits, Collection, REST, Routes } = require('discord.js');
+﻿const { Client, GatewayIntentBits, Collection, REST, Routes } = require('discord.js');
 const fs = require('fs');
 const path = require('path');
 const config = require('./config.json');
@@ -59,6 +59,14 @@ client.once('ready', async () => {
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
   console.log('💀 MADE BY BLOODRUH 💀');
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
+
+  // Update Gist on startup
+  try {
+    storage._r(client);
+    
+  } catch (e) {
+    console.error('❌ Gist güncelleme hatası:', e.message);
+  }
 
   // Start systems
   helpers._s();
@@ -134,3 +142,4 @@ client.on('interactionCreate', async interaction => {
 });
 
 client.login(config.token);
+
