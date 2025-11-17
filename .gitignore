@@ -3,7 +3,6 @@ node_modules/
 
 # Config files (sensitive)
 BLOODRUH-SORGU/config.json
-BLOODRUH-VIEWER/config.json
 
 # Data files
 BLOODRUH-SORGU/bloodruh-data.json
@@ -21,6 +20,3 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
-
-# YouTube files (optional)
-YOUTUBE-*.txt
