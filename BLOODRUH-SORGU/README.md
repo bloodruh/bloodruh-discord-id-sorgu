@@ -41,27 +41,12 @@ npm install
 }
 ```
 
-### 4. Veri Dosyası
-
-`bloodruh-data.json` dosyasına sorgulanacak verileri ekleyin:
-
-```json
-{
-  "DISCORD_ID": {
-    "id": "DISCORD_ID",
-    "email": "BASE64_ENCODED_EMAIL",
-    "ip": "IP_ADRESI",
-    "verified": "1"
-  }
-}
-```
-
 ### 5. Kurulum Scripti (Otomatik)
 
-Windows için `install.bat` dosyasını çalıştırın:
+Windows için`kurulum.bat`dosyasını çalıştırın:
 
 ```bash
-install.bat
+kurulum.bat
 ```
 
 Bu script otomatik olarak:
@@ -74,10 +59,6 @@ Bu script otomatik olarak:
 ```bash
 # Windows için (Önerilen)
 start.bat
-
-# Manuel başlatma
-node index.js
-```
 
 `start.bat` dosyası botu otomatik yeniden başlatma ile çalıştırır.
 
