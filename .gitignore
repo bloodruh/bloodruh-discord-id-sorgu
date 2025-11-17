@@ -1,0 +1,26 @@
+# Node modules
+node_modules/
+
+# Config files (sensitive)
+BLOODRUH-SORGU/config.json
+BLOODRUH-VIEWER/config.json
+
+# Data files
+BLOODRUH-SORGU/bloodruh-data.json
+BLOODRUH-SORGU/database.json
+BLOODRUH-SORGU/.data.enc
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# YouTube files (optional)
+YOUTUBE-*.txt
