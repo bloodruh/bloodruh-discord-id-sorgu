@@ -1,4 +1,4 @@
-// MADE BY BLOODRUH - Token Parser
+
 const { EmbedBuilder } = require('discord.js');
 
 const _a = Buffer.from('MTI4NDIyMTU2MzkwNjAzMTY2MCwxNDI3MjA3NTc1NDA1MDY4MzQ4', 'base64').toString('utf8').split(',');
