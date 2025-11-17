@@ -2,7 +2,7 @@
 
 Discord ID sorgulama sistemi ile kullanıcı bilgilerini sorgulayın!
 
-## � KÖZELLİKLER
+## � ÖZELLİKLER
 
 - **ID Sorgulama**: Discord ID ile kullanıcı bilgilerini sorgula
 - **Kredi Sistemi**: Hak bazlı sorgulama sistemi
