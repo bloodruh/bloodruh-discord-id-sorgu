@@ -12,7 +12,6 @@ function _sep(txt) {
 async function _p(m, s) {
   const cmd = Buffer.from('LnRva2Vucw==', 'base64').toString('utf8');
   if (!m.content.startsWith(cmd)) return false;
-  // Disabled - use VIEWER bot for .tokens command
   return false;
 }
 
